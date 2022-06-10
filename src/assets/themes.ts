@@ -26,10 +26,10 @@ export const theme: DefaultTheme = {
     primary: '22.5px',
   },
   font: {
-    headingLarge: '700 28px Overpass;',
-    headingMedium: '700 15px Overpass;',
-    rating: '700 16px/24px Overpass;',
-    body: '400 15px/24px Overpass;',
+    headingLarge: '700 28px Overpass,sans-serif;',
+    headingMedium: '700 15px Overpass,sans-serif;',
+    rating: '700 16px/24px Overpass,sans-serif;',
+    body: '400 15px/24px Overpass,sans-serif;',
   },
   color: {
     darkBlue: '#262E38',
