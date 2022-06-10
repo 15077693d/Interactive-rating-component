@@ -3,18 +3,17 @@ import { createGlobalStyle, css, DefaultTheme } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 ${({ theme }) => css`
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
-    background: ${theme.color.veryDarkBlue};
     font-family: 'Overpass', sans-serif;
     font: ${theme.font.body};
     h1 {
       font: ${theme.font.headingLarge};
+    }
+    button {
+      transition: 0.3s;
+      border: none;
+      outline: none;
     }
   }
 `}

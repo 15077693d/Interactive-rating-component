@@ -1,8 +1,23 @@
 import styled, { css } from 'styled-components'
 
+export const Title = styled.h1`
+  margin: 0px;
+  color: ${({ theme: { color } }) => color.pureWhite};
+`
+type ParagraphProps = {
+  textAlign?: 'center' | 'left'
+}
+
+export const Paragraph = styled.div<ParagraphProps>`
+  ${({ textAlign }) => css`
+    text-align: ${textAlign};
+  `}
+`
+
 type ContainerProps = {
   alignItems?: 'normal' | 'stretch' | 'center'
 }
+
 export const Container = styled.div<ContainerProps>`
   ${({ theme: { color, mediaQuery }, alignItems = 'normal' }) => css`
     box-sizing: border-box;
@@ -16,10 +31,6 @@ export const Container = styled.div<ContainerProps>`
     border-radius: 30px;
     background: ${color.gradientBlack};
     color: ${color.lightGrey};
-    h1 {
-      margin: 0px;
-      color: ${color.pureWhite};
-    }
     button {
       transition: 0.3s;
       border: none;
